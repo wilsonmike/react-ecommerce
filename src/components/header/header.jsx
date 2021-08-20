@@ -8,7 +8,7 @@ import "./header.styles.scss";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         <div className="row justify-content-between">
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>

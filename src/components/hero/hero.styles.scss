@@ -1,11 +1,22 @@
 .main-tag {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .sub-tag {
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 .main-asset {
   width: 100%;
+}
+.jumbo-main {
+  background-image: url("../../assets/clouds.jpg");
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.container {
+  color: rgb(34, 39, 44);
 }
