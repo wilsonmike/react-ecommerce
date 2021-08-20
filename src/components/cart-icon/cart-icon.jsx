@@ -1,11 +1,10 @@
 import React from "react";
-import shoppingBag from "../../assets/shopping-bag.png";
 import "./cart-icon.styles.scss";
 
 const CartIcon = () => {
   return (
     <div className="cart-container">
-      <img src={shoppingBag} alt="shopping cart icon" />
+      <i className="bi bi-cart3"></i>
       <span className="cart-count"> 5 </span>
     </div>
   );
