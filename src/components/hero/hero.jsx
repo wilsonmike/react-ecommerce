@@ -1,4 +1,6 @@
 import React from "react";
+import CarouselHero from "../carousel-hero/carousel-hero";
+import MainAsset from "../../assets/mainasset.png";
 import "./hero.styles.scss";
 
 const Hero = () => {
@@ -7,19 +9,18 @@ const Hero = () => {
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-10 col-sm-8 col-lg-6">
           <img
-            src="bootstrap-themes.png"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="700"
-            height="500"
+            src={MainAsset}
+            class="d-block mx-lg-auto img-fluid main-asset"
+            alt="Families wearing shirts made by Hope35"
             loading="lazy"
           />
         </div>
         <div className="col-lg-6">
-          <h1 className="display-5 fw-bold lh-1 mb-3">
-            Support from friends and family improves recovery.
+          <h1 className=" lh-1 mb-3 mt-5 main-tag">
+            Support from friends and family improves recovery
           </h1>
-          <p className="lead">
+          <hr className="hr-row" />
+          <p className="sub-tag">
             Hope35 creates custom t-shirts and a unique online platform for
             their support team to share photos and words of encouragement.
           </p>
