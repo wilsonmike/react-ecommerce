@@ -105,3 +105,10 @@
 .gradient-button-4:hover {
   background-position: right center;
 }
+
+.raster {
+  background-image: url("../../assets/testbackend.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}

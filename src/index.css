@@ -6,9 +6,9 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("../../react-ecommerce/src/assets/backended.png");
+  /* background: url("../../react-ecommerce/src/assets/backended.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 code {
