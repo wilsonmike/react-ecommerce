@@ -1,7 +1,6 @@
 import React from "react";
-import CarouselHero from "../carousel-hero/carousel-hero";
-import MainAsset from "../../assets/mainasset.png";
 import Collage from "../../assets/collage.png";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./hero.styles.scss";
 
 const Hero = () => {
@@ -27,12 +26,14 @@ const Hero = () => {
               share photos and words of encouragement.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-center">
-              <button
-                type="button"
-                className="btn gradient-button gradient-button-3 btn-md  me-md-2"
-              >
-                <strong>Get Started</strong>
-              </button>
+              <Link to="/get-started" currentPath="/">
+                <button
+                  type="button"
+                  className="btn gradient-button gradient-button-3 btn-md  me-md-2"
+                >
+                  <strong>Get Started</strong>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import hopelogo from "../../assets/hopepurp.png";
 import "./header.styles.scss";
 
@@ -12,9 +13,11 @@ const Header = () => {
     <Navbar expand="lg">
       <Container>
         <div className="row justify-content-between">
-          <Navbar.Brand href="#home">
-            <img className="logo-main" src={hopelogo} alt="Hope35 Logo" />{" "}
-          </Navbar.Brand>
+          <Link to="/" currentPath="/">
+            <Navbar.Brand href="#home">
+              <img className="logo-main" src={hopelogo} alt="Hope35 Logo" />{" "}
+            </Navbar.Brand>
+          </Link>
         </div>
         <ul className="nav justify-content-end">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
