@@ -5,7 +5,7 @@ const CartIcon = () => {
   return (
     <div className="cart-container">
       <i className="bi bi-cart3"></i>
-      <span className="cart-count"> 5 </span>
+      <span className="cart-count">5</span>
     </div>
   );
 };

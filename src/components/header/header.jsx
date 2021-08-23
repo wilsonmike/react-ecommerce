@@ -13,9 +13,9 @@ const Header = () => {
     <Navbar expand="lg">
       <Container>
         <div className="row justify-content-between">
-          <Link to="/" currentPath="/">
+          <Link to="/" currentpath="/">
             <Navbar.Brand href="#home">
-              <img className="logo-main" src={hopelogo} alt="Hope35 Logo" />{" "}
+              <img className="logo-main" src={hopelogo} alt="Hope35 Logo" />
             </Navbar.Brand>
           </Link>
         </div>

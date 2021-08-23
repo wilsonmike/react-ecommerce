@@ -26,7 +26,7 @@ const Hero = () => {
               share photos and words of encouragement.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-center">
-              <Link to="/get-started" currentPath="/">
+              <Link to="/get-started" currentpath="/">
                 <button
                   type="button"
                   className="btn gradient-button gradient-button-3 btn-md  me-md-2"
