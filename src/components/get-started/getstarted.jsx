@@ -6,6 +6,7 @@ import { ListGroupItem } from "react-bootstrap";
 import Badge from 'react-bootstrap/Badge'
 import Store from '../../assets/store.png';
 import tee from '../../assets/tee.png';
+import { Link } from 'react-router-dom';
 
 
 const GetStarted = () => {
@@ -45,7 +46,9 @@ const GetStarted = () => {
   </Card.Body>
  
   <Card.Body>
+    <Link to="/ashleychase">
   <button className="btn btn-outline-primary btn-md  me-md-2 created">Shop & Post</button>
+  </Link>
   </Card.Body>
 </Card>
       </div>
