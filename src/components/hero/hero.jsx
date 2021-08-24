@@ -23,7 +23,7 @@ const Hero = () => {
             <hr className="hr-row" />
             <p className="sub-tag">
               Hope35 creates custom t-shirts and a unique online platform to
-              share photos and words of encouragement.
+              share photos and words of encouragement
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-center">
               <Link to="/get-started" currentpath="/">
@@ -31,7 +31,7 @@ const Hero = () => {
                   type="button"
                   className="btn gradient-button gradient-button-3 btn-md  me-md-2"
                 >
-                  <strong>Get Started</strong>
+                  Get Started
                 </button>
               </Link>
             </div>
