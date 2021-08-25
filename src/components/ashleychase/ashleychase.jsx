@@ -21,10 +21,11 @@ const AshleyChase = () => {
                 alt="Ashley Chase"
               />
               <h6 className="store-owner">Ashley Chase</h6>
-              <p>
+              <p className="store-owner-summary">
                 On 7/14, Ashley was diagnosed with a Grade 3 Astrocytoma – a
                 malignant brain tumor.{" "}
               </p>
+              <div class="">$2,800 Raised</div>
               <hr />
               <div className="tshirt-container">
                 <div className="t-box">
