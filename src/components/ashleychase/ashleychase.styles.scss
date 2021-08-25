@@ -13,13 +13,13 @@
   max-width: 260px;
   border-radius: 5px;
   margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  box-shadow: rgba(0.9, 0.1, 0.1, 0.1) 0px 10px 60px;
 }
 .image-name {
   margin: 0 auto;
 }
 .main {
-  margin-top: 15vh;
+  margin-top: 10vh;
   width: 100%;
 }
 
@@ -28,7 +28,7 @@
   flex-direction: row;
   margin: 0 auto;
   width: 100%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 .store-owner-summary {
   text-align: center;
@@ -166,5 +166,22 @@
   }
   .comments-container {
     display: none;
+  }
+
+  .message-btn {
+    background-color: #b2c3de;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    max-height: 50px;
+    color: #fff;
+  }
+
+  .message-btn:hover {
+    background-color: #e9eef7;
+    margin-top: 20px;
+    border: none;
+    max-height: 50px;
+    color: rgb(113, 104, 238);
   }
 }

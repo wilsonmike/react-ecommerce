@@ -9,7 +9,7 @@ const AshleyChase = () => {
     <div className="master-background">
       <div className="main">
         <div className="container">
-          <div className="card p-3 mb-5 bg-white rounded profile-container">
+          <div className="card p-3 mb-5 bg-white profile-container">
             {/* <div className="comments-container">
               Comments <Badge bg="secondary">9</Badge>
               <span className="visually-hidden">unread messages</span>
