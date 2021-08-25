@@ -27,6 +27,9 @@ const AshleyChase = () => {
               </p>
               <hr />
               <div class="text-raised">$2,800 Raised</div>
+              <button className="btn btn-md message-btn">
+                <strong>Post for Ashley to see</strong>
+              </button>
             </div>
             <div className="tshirt-container">
               <div className="t-box">
@@ -51,9 +54,6 @@ const AshleyChase = () => {
               </div>
             </div>
           </div>
-          <button className="btn btn-md message-btn">
-            <strong>Post</strong>
-          </button>
         </div>
       </div>
     </div>
