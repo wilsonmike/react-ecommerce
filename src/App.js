@@ -1,19 +1,18 @@
-import Header from "./components/header/header";
-import Hero from "./components/hero/hero";
+import HomePage from "./components/home-page";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
 import { Switch, Route } from "react-router-dom";
-import GetStarted from "./components/get-started/getstarted";
-import Active from "./components/active-stores/active";
-import AshleyChase from "./components/ashleychase/ashleychase";
-import FeaturedCollection from "./components/featured-collection/featured-collection";
-import Footer from "./components/footer/footer";
+import GetStartedPage from "./components/get-started";
+import AshleyChasePage from "./components/ashley-chase-page";
 
 function App() {
   return (
     <Switch>
-      <Route path="/featuredcollection">
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/get-started" component={GetStartedPage} />
+      <Route exact path="/ashleychase" component={AshleyChasePage} />
+      {/* <Route path="/featuredcollection">
         <div>
           <Header />
           <FeaturedCollection />
@@ -47,7 +46,7 @@ function App() {
           <Hero />
           <Footer />
         </div>
-      </Route>
+      </Route> */}
     </Switch>
   );
 }
