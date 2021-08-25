@@ -1,6 +1,6 @@
-.main {
-  margin: 0 auto;
-}
+// .main {
+//   margin: 0 auto;
+// }
 .ashley-start {
   margin-top: 30vh;
 }
@@ -8,11 +8,24 @@
 .ashley {
   max-width: 200px;
   border-radius: 5px;
+  margin: 0 auto;
+}
+.image-name {
+  margin: 0 auto;
 }
 .main {
   margin-top: 20vh;
 }
-.card {
-  justify-content: center;
-  align-items: center;
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
 }
+
+.comments-container {
+  align-items: flex-start !important;
+}
+// .card {
+//   justify-content: center;
+//   align-items: center;
+// }
