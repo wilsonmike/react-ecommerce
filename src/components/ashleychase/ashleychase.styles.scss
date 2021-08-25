@@ -6,7 +6,7 @@
 }
 
 .ashley {
-  max-width: 200px;
+  max-width: 250px;
   border-radius: 5px;
   margin: 0 auto;
 }
@@ -30,9 +30,37 @@
   height: 100vh;
   z-index: 0;
 }
+.tshirt-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.t-box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.t-image {
+  max-width: 400px;
+}
+
+.order-now {
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #b2c3de;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
 
 .comments-container {
   align-items: flex-start !important;
+}
+
+.t-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .message-btn {
@@ -44,9 +72,22 @@
 
 .store-owner {
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+.t-details {
+  font-size: 0.8rem;
 }
 // .card {
 //   justify-content: center;
 //   align-items: center;
 // }
+
+@media (max-width: 991.98px) {
+  .tshirt-container {
+    flex-direction: column;
+  }
+
+  .order-now {
+    width: 80%;
+  }
+}

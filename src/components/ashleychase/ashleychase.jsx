@@ -1,6 +1,8 @@
 import "./ashleychase.styles.scss";
 import Ashley from "../../assets/ashleychase.PNG";
 import Badge from "react-bootstrap/Badge";
+import blueashley from "../../assets/blue-ashley.png";
+import pinkashley from "../../assets/pink-ashley.png";
 import Button from "react-bootstrap/Button";
 const AshleyChase = () => {
   return (
@@ -24,6 +26,28 @@ const AshleyChase = () => {
                 malignant brain tumor.{" "}
               </p>
               <hr />
+              <div className="tshirt-container">
+                <div className="t-box">
+                  <img
+                    className="t-image"
+                    src={blueashley}
+                    alt="ashley chase blue shirt"
+                  />
+                  <h5>Team Ashley Blue Tee</h5>
+                  <p className="t-details">Softest 50/50 blend</p>
+                  <button className="order-now">Order</button>
+                </div>
+                <div className="t-box">
+                  <img
+                    className="t-image"
+                    src={pinkashley}
+                    alt="ashley chase pink shirt"
+                  />
+                  <h5>Team Ashley Pink Tee</h5>
+                  <p className="t-details">Softest 50/50 blend</p>
+                  <button className="order-now">Order</button>
+                </div>
+              </div>
             </div>
             <button className="btn btn-md message-btn">
               <strong>Post</strong>
