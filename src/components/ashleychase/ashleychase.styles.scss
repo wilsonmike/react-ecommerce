@@ -15,6 +15,9 @@
 }
 .main {
   margin-top: 20vh;
+  background-image: url("../../assets/cloudhalf.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .profile-container {
@@ -24,6 +27,12 @@
 
 .comments-container {
   align-items: flex-start !important;
+}
+
+.message-btn {
+  background-color: #b2c3de;
+  border: none;
+  max-height: 50px;
 }
 // .card {
 //   justify-content: center;

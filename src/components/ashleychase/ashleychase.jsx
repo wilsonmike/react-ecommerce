@@ -19,7 +19,12 @@ const AshleyChase = () => {
             />
             <hr />
             <h6>Ashley Chase</h6>
+            <p>
+              On 7/14, Ashley was diagnosed with a Grade 3 Astrocytoma – a
+              malignant brain tumor.{" "}
+            </p>
           </div>
+          <button className="btn btn-md message-btn">Message</button>
         </div>
       </div>
     </div>
