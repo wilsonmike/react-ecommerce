@@ -3,7 +3,7 @@ import Hero from "./components/hero/hero";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import GetStarted from "./components/get-started/getstarted";
 import Active from "./components/active-stores/active";
 import AshleyChase from "./components/ashleychase/ashleychase";

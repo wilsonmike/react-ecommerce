@@ -1,9 +1,8 @@
 import "./ashleychase.styles.scss";
 import Ashley from "../../assets/ashleychase.PNG";
-import Badge from "react-bootstrap/Badge";
 import blueashley from "../../assets/blue-ashley.png";
 import pinkashley from "../../assets/pink-ashley.png";
-import Button from "react-bootstrap/Button";
+
 const AshleyChase = () => {
   return (
     <div className="master-background">

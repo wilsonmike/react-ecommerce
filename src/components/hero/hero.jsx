@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="col-10 col-sm-8 col-lg-6">
             <img
               src={Collage}
-              class="d-block mx-lg-auto img-fluid main-asset"
+              className="d-block mx-lg-auto img-fluid main-asset"
               alt="Families wearing shirts made by Hope35"
               loading="lazy"
             />
