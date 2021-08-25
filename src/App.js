@@ -7,17 +7,24 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import GetStarted from "./components/get-started/getstarted";
 import Active from "./components/active-stores/active";
 import AshleyChase from "./components/ashleychase/ashleychase";
+import FeaturedCollection from "./components/featured-collection/featured-collection";
 
 function App() {
   return (
     <Switch>
-        <Route path="/ashleychase">
+      <Route path="/featuredcollection">
+        <div>
+          <Header />
+          <FeaturedCollection />
+        </div>
+      </Route>
+      <Route path="/ashleychase">
         <div>
           <Header />
           <AshleyChase />
         </div>
       </Route>
-        <Route path="/active">
+      <Route path="/active">
         <div>
           <Header />
           <Active />
