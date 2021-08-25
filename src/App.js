@@ -12,41 +12,6 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/get-started" component={GetStartedPage} />
       <Route exact path="/ashleychase" component={AshleyChasePage} />
-      {/* <Route path="/featuredcollection">
-        <div>
-          <Header />
-          <FeaturedCollection />
-          <Footer />
-        </div>
-      </Route>
-      <Route path="/ashleychase">
-        <div>
-          <Header />
-          <AshleyChase />
-          <Footer />
-        </div>
-      </Route>
-      <Route path="/active">
-        <div>
-          <Header />
-          <Active />
-          <Footer />
-        </div>
-      </Route>
-      <Route path="/get-started">
-        <div>
-          <Header />
-          <GetStarted />
-          <Footer />
-        </div>
-      </Route>
-      <Route path="/">
-        <div>
-          <Header />
-          <Hero />
-          <Footer />
-        </div>
-      </Route> */}
     </Switch>
   );
 }
