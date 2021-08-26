@@ -2,7 +2,8 @@ import "./footer.styles.scss";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="footer">
+    <div className="footer-container">
+       <div className="footer">
       <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
           <li className="nav-item">
@@ -34,6 +35,8 @@ const Footer = () => {
         <p className="text-center text-muted">&copy; {year} Company, Inc</p>
       </footer>
     </div>
+    </div>
+   
   );
 };
 
