@@ -23,14 +23,14 @@ const SingleProduct = ( {match, history: {push}}) => {
     const { imageUrl, title, price, description } = product;
     return (
         <Layout>
-            <div className='single-product container'>
+            <div className='single-product-container'>
                 <div className='product-image'>
                     <img src={imageUrl} alt="product" />
                 </div>
                 <div className='product-details'>
                     <div className='name-price'>
-                        <h3>{title}</h3>
-                        <p>{price}</p>
+                        <h3 className='t-description'>{title}</h3>
+                        <p>$ {price}</p>
                     </div>
                     <div className='add-to-cart-btns'>
                         <button className='button is-white nomad-btn' id='btn-white-outline'>
