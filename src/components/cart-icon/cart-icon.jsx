@@ -4,7 +4,8 @@ import { CartContext } from "../../context/cart-context";
 import ShoppingCart from "../../assets/shopping-bag.png";
 
 const CartIcon = () => {
-  const { itemCount } = useContext(CartContext);
+  const { itemCount, cartItems } = useContext(CartContext);
+  console.log("CartItems:", cartItems);
   return (
     <div className="cart-container">
       <img className="bag" src={ShoppingCart} alt="shopping cart" />
