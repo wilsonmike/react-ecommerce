@@ -1,4 +1,7 @@
-import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from "../../icons";
+// import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from "../../icons";
+import increase from "../../../assets/plus (1).png";
+import trash from "../../../assets/remove (1).png";
+import decrease from "../../../assets/negative.png";
 import "./cart-page.styles.scss";
 
 const CartItem = (product) => {
@@ -12,23 +15,24 @@ const CartItem = (product) => {
       <div className="details">
         <div className="name-price">
           <h4>{title}</h4>
-          <p>${price}</p>
+          <p className="pricey">${price}</p>
         </div>
+        <hr />
         <div className="quantity">
           <p>{`Quantity: ${quantity}`}</p>
         </div>
         <div className="btns-container">
           <button className="btn-increase">
-            <PlusCircleIcon width="20px" />
+            <img src={increase} alt="increase item quantity" width="20px" />
           </button>
           {quantity === 1 && (
             <button className="btn-trash">
-              <TrashIcon width="20px" />
+              <img src={trash} alt="remove item from cart" width="20px" />
             </button>
           )}
           {quantity > 1 && (
             <button className="btn-decrease">
-              <MinusCircleIcon width="20px" />
+              <img src={decrease} alt="decrease item quantity" width="20px" />
             </button>
           )}
         </div>

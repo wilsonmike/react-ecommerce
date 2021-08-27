@@ -9,20 +9,26 @@ const CartPage = () => {
   return (
     <Layout>
       <>
-        <h1>Cart</h1>
-        {cartItems.length === 0 ? (
-          <div className="empty-cart">Your Cart is empty</div>
-        ) : (
-          <>
-            <div className="cart-page">
-              <div className="cart-item-container">
-                {cartItems.map((item) => (
-                  <CartItem {...item} key={item.id} />
-                ))}
+        <div className="cart-main">
+          <h1>Items In Your Bag</h1>
+          <hr />
+          <p className="tag-dono">
+            $10 from every shirt sold goes directly back to the store creator.
+          </p>
+          {cartItems.length === 0 ? (
+            <div className="empty-cart">Your Cart is empty</div>
+          ) : (
+            <>
+              <div className="cart-page">
+                <div className="cart-item-container">
+                  {cartItems.map((item) => (
+                    <CartItem {...item} key={item.id} />
+                  ))}
+                </div>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
+        </div>
       </>
     </Layout>
   );
