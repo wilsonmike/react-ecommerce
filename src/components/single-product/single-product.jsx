@@ -26,6 +26,7 @@ const SingleProduct = ({ match, history: { push } }) => {
     return null;
   }
   const { imageUrl, title, price, description } = product;
+  const itemInCart = isInCart(product, cartItems);
   return (
     <Layout>
       <div className="single-product-container">
@@ -38,7 +39,7 @@ const SingleProduct = ({ match, history: { push } }) => {
             <p>$ {price}</p>
           </div>
           <div className="add-to-cart-btns">
-            {!isInCart(product, cartItems) && (
+            {!itemInCart && (
               <button
                 className="button is-white nomad-btn"
                 id="btn-white-outline"
@@ -47,7 +48,7 @@ const SingleProduct = ({ match, history: { push } }) => {
                 ADD TO CART
               </button>
             )}
-            {isInCart(product, cartItems) && (
+            {itemInCart && (
               <button
                 className="button is-white nomad-btn"
                 id="btn-white-outline"
