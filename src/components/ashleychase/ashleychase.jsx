@@ -25,7 +25,7 @@ const AshleyChase = () => {
                 malignant brain tumor.{" "}
               </p>
               <hr />
-              <div class="text-raised">$2,800 Raised</div>
+              <div className="text-raised">$2,800 Raised</div>
               <button className="btn btn-md message-btn">
                 <strong>Post for Ashley to see</strong>
               </button>
