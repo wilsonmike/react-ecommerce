@@ -4,14 +4,15 @@ h1,
 }
 
 .cart-item {
-  text-align: center;
-  border: 1px solid #ccc;
-  margin: 2rem;
-  padding: 1rem;
-
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  margin: 5% auto;
+  align-items: center;
+  justify-content: center;
   .item-image {
     img {
-      width: 50px;
+      width: 300px;
     }
   }
 
@@ -47,19 +48,14 @@ h1,
   }
 
   @media (min-width: 1024px) {
-    .cart-page {
-      display: flex;
-      justify-content: center;
-    }
     .cart-item {
       display: flex;
-      justify-content: space-between;
-      div {
-        margin: 1rem;
-      }
-      .name-price {
-        width: 200px;
-      }
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      align-items: left;
+      justify-content: center;
+    }
+    .details {
     }
   }
 }
