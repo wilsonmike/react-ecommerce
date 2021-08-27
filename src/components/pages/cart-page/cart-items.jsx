@@ -1,4 +1,5 @@
 import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from "../../icons";
+import "./cart-page.styles.scss";
 
 const CartItem = (product) => {
   const { title, imageUrl, price, quantity } = product;
