@@ -6,8 +6,15 @@ import Total from "./total";
 import "./cart-page.styles.scss";
 
 const CartPage = () => {
-  const { cartItems, itemCount, total, increase, decrease, removeProduct } =
-    useContext(CartContext);
+  const {
+    cartItems,
+    itemCount,
+    total,
+    increase,
+    decrease,
+    removeProduct,
+    clearCart,
+  } = useContext(CartContext);
   const funcpair = { increase, decrease, removeProduct };
   return (
     <Layout>
@@ -35,7 +42,11 @@ const CartPage = () => {
             <hr className="hr-mobile" />
             {itemCount >= 1 && (
               <div>
-                <Total itemCount={itemCount} total={total} />
+                <Total
+                  itemCount={itemCount}
+                  total={total}
+                  clearCart={clearCart}
+                />
               </div>
             )}
           </div>
