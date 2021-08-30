@@ -2,7 +2,6 @@ h1,
 .empty-cart {
   text-align: center;
 }
-
 .cart-main {
   margin-top: 5%;
   text-align: center;
@@ -19,7 +18,9 @@ hr {
   align-items: center;
   align-self: center;
 }
-
+.items-in-bag {
+  font-weight: bold;
+}
 .pricey {
   margin-top: 5px;
 }
@@ -27,6 +28,8 @@ hr {
   display: flex;
   flex-direction: row;
   margin: 5% auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px;
   align-items: center;
   justify-content: center;
   .item-image {
@@ -91,6 +94,9 @@ hr {
     align-items: center;
     justify-content: center;
     flex: 1;
+  }
+  .details {
+    margin-right: 30px;
   }
   .browser-cart {
     display: flex;

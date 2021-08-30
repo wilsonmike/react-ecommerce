@@ -14,6 +14,7 @@ const CartItem = (props) => {
     description,
     increase,
     decrease,
+    removeProduct,
   } = props;
   const product = { title, imageUrl, price, quantity, id, description };
 
@@ -36,7 +37,10 @@ const CartItem = (props) => {
             <img src={increasebtn} alt="increase item quantity" width="20px" />
           </button>
           {quantity === 1 && (
-            <button className="btn-trash">
+            <button
+              className="btn-trash"
+              onClick={() => removeProduct(product)}
+            >
               <img src={trash} alt="remove item from cart" width="20px" />
             </button>
           )}
