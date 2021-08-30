@@ -41,7 +41,7 @@ const CartItem = (props) => {
             </button>
           )}
           {quantity > 1 && (
-            <button className="btn-decrease">
+            <button className="btn-decrease" onClick={() => decrease(product)}>
               <img
                 src={decreasebtn}
                 alt="decrease item quantity"
