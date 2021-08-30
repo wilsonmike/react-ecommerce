@@ -31,9 +31,11 @@ const CartPage = () => {
               </>
             )}
             <hr className="hr-mobile" />
-            <div>
-              <Total itemCount={itemCount} total={total} />
-            </div>
+            {itemCount >= 1 && (
+              <div>
+                <Total itemCount={itemCount} total={total} />
+              </div>
+            )}
           </div>
         </div>
       </>
