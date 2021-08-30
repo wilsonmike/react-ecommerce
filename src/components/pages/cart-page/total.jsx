@@ -1,6 +1,6 @@
 import { withRouter } from "react-router-dom";
 
-const Total = ({ itemCount, total }) => {
+const Total = ({ itemCount, total, history }) => {
   return (
     <div className="total-container">
       <div className="total">
@@ -22,4 +22,4 @@ const Total = ({ itemCount, total }) => {
   );
 };
 
-export default Total;
+export default withRouter(Total);

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/cart-context";
 import Layout from "../../../shared/layout";
 import CartItem from "./cart-items";
+import Total from "./total";
 import "./cart-page.styles.scss";
 
 const CartPage = () => {
@@ -29,6 +30,7 @@ const CartPage = () => {
             </>
           )}
         </div>
+        <Total itemCount={itemCount} total={total} />
       </>
     </Layout>
   );
