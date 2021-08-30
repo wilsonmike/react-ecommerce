@@ -41,7 +41,7 @@ const SingleProduct = ({ match, history: { push } }) => {
           <div className="add-to-cart-btns">
             {!itemInCart && (
               <button
-                className="button is-white nomad-btn"
+                className="order-now nomad-btn"
                 id="btn-white-outline"
                 onClick={() => addProduct(product)}
               >

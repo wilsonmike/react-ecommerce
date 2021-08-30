@@ -9,7 +9,7 @@ const Total = ({ itemCount, total, history }) => {
       </div>
       <div className="checkout">
         <button
-          className="button is-black"
+          className="button order-now"
           onClick={() => history.pushState("/checkout")}
         >
           CHECKOUT

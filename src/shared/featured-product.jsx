@@ -21,7 +21,7 @@ const FeaturedProduct = (props) => {
         <p>$ {price}</p>
         {!itemInCart && (
           <button
-            className="button is-black nomad-btn"
+            className="button order-now nomad-btn"
             onClick={() => addProduct(product)}
           >
             ADD TO CART
