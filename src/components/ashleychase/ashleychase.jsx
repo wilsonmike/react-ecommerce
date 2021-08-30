@@ -2,6 +2,7 @@ import "./ashleychase.styles.scss";
 import Ashley from "../../assets/ashleychase.PNG";
 import blueashley from "../../assets/blue-ashley.png";
 import pinkashley from "../../assets/pink-ashley.png";
+import UploadForm from "../upload-form/UploadForm";
 
 const AshleyChase = () => {
   return (
@@ -26,9 +27,10 @@ const AshleyChase = () => {
               </p>
               <hr />
               <div className="text-raised">$2,800 Raised</div>
-              <button className="btn btn-md message-btn">
+              <UploadForm />
+              {/* <button className="btn btn-md message-btn">
                 <strong>Post for Ashley to see</strong>
-              </button>
+              </button> */}
             </div>
             <div className="tshirt-container">
               <div className="t-box">
