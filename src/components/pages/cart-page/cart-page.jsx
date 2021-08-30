@@ -16,21 +16,26 @@ const CartPage = () => {
           <p className="tag-dono">
             $10 from every shirt sold goes directly back to the store creator.
           </p>
-          {cartItems.length === 0 ? (
-            <div className="empty-cart">Your Cart is empty</div>
-          ) : (
-            <>
-              <div className="cart-page">
-                <div className="cart-item-container">
-                  {cartItems.map((item) => (
-                    <CartItem {...item} key={item.id} />
-                  ))}
+          <div className="browser-cart">
+            {cartItems.length === 0 ? (
+              <div className="empty-cart">Your Cart is empty</div>
+            ) : (
+              <>
+                <div className="cart-page">
+                  <div className="cart-item-container">
+                    {cartItems.map((item) => (
+                      <CartItem {...item} key={item.id} />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </>
-          )}
+              </>
+            )}
+            <hr className="hr-mobile" />
+            <div>
+              <Total itemCount={itemCount} total={total} />
+            </div>
+          </div>
         </div>
-        <Total itemCount={itemCount} total={total} />
       </>
     </Layout>
   );

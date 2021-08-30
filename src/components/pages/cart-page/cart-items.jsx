@@ -1,7 +1,7 @@
 // import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from "../../icons";
-import increase from "../../../assets/plus (1).png";
-import trash from "../../../assets/remove (1).png";
-import decrease from "../../../assets/negative.png";
+import increase from "../../../assets/plusblue.png";
+import trash from "../../../assets/removeblue.png";
+import decrease from "../../../assets/minusblue.png";
 import "./cart-page.styles.scss";
 
 const CartItem = (product) => {
