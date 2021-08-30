@@ -1,11 +1,21 @@
 // import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from "../../icons";
-import increase from "../../../assets/plusblue.png";
+import increasebtn from "../../../assets/plusblue.png";
 import trash from "../../../assets/removeblue.png";
-import decrease from "../../../assets/minusblue.png";
+import decreasebtn from "../../../assets/minusblue.png";
 import "./cart-page.styles.scss";
 
-const CartItem = (product) => {
-  const { title, imageUrl, price, quantity } = product;
+const CartItem = (props) => {
+  const {
+    title,
+    imageUrl,
+    price,
+    quantity,
+    id,
+    description,
+    increase,
+    decrease,
+  } = props;
+  const product = { title, imageUrl, price, quantity, id, description };
 
   return (
     <div className="cart-item">
@@ -22,8 +32,8 @@ const CartItem = (product) => {
           <p>{`Quantity: ${quantity}`}</p>
         </div>
         <div className="btns-container">
-          <button className="btn-increase">
-            <img src={increase} alt="increase item quantity" width="20px" />
+          <button className="btn-increase" onClick={() => increase(product)}>
+            <img src={increasebtn} alt="increase item quantity" width="20px" />
           </button>
           {quantity === 1 && (
             <button className="btn-trash">
@@ -32,7 +42,11 @@ const CartItem = (product) => {
           )}
           {quantity > 1 && (
             <button className="btn-decrease">
-              <img src={decrease} alt="decrease item quantity" width="20px" />
+              <img
+                src={decreasebtn}
+                alt="decrease item quantity"
+                width="20px"
+              />
             </button>
           )}
         </div>

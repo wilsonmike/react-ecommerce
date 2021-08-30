@@ -81,20 +81,25 @@
 }
 
 .message-btn {
-  background-color: #b2c3de;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #7996c5;
   border: none;
-  max-height: 50px;
   color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .message-btn:hover {
-  background-color: #e9eef7;
-  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #5a7aac;
   border: none;
-  max-height: 50px;
-  color: rgb(113, 104, 238);
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .store-owner {
