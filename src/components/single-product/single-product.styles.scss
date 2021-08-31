@@ -1,3 +1,21 @@
+.order-now {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  background-color: #7996c5;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.checkout-now {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  background-color: #6382b4;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
 .single-product-container {
   margin: 2rem 0;
   margin-bottom: 3rem;
@@ -15,16 +33,22 @@
   }
 
   .product-image {
-    flex: 0 0 400px;
+    flex: 0 0 600px;
+  }
+
+  .p-price {
+    font-size: 1.5rem;
   }
 
   .product-details {
+    text-align: center;
     .name-price {
       margin: 1rem 0;
+      font-size: 3rem;
     }
 
     .t-description {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
 
     .add-to-cart-btns {

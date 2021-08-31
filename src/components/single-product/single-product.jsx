@@ -7,6 +7,9 @@ import Layout from "../../shared/layout";
 import "./single-product.styles.scss";
 
 const SingleProduct = ({ match, history: { push } }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { products } = useContext(ProductsContext);
   const { addProduct, cartItems, increase } = useContext(CartContext);
   const { id } = match.params;
@@ -36,7 +39,7 @@ const SingleProduct = ({ match, history: { push } }) => {
         <div className="product-details">
           <div className="name-price">
             <h3 className="t-description">{title}</h3>
-            <p>$ {price}</p>
+            <p className="p-price">$ {price}</p>
           </div>
           <div className="add-to-cart-btns">
             {!itemInCart && (
@@ -50,7 +53,7 @@ const SingleProduct = ({ match, history: { push } }) => {
             )}
             {itemInCart && (
               <button
-                className="button is-white nomad-btn"
+                className="button order-now nomad-btn"
                 id="btn-white-outline"
                 onClick={() => increase(product)}
               >
@@ -59,7 +62,7 @@ const SingleProduct = ({ match, history: { push } }) => {
             )}
 
             <button
-              className="button is-black nomad-btn"
+              className="button checkout-now nomad-btn"
               id="btn-white-outline"
             >
               PROCEED TO CHECKOUT
