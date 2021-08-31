@@ -1,11 +1,14 @@
+import { useState } from "react";
 import "./ashleychase.styles.scss";
 import Ashley from "../../assets/ashleychase.PNG";
 import blueashley from "../../assets/blue-ashley.png";
 import pinkashley from "../../assets/pink-ashley.png";
 import UploadForm from "../upload-form/UploadForm";
 import ImageGrid from "../image-grid/ImageGrid";
+import Modal from "../modal/Modal";
 
 const AshleyChase = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
   return (
     <div className="master-background">
       <div className="main">
@@ -56,7 +59,10 @@ const AshleyChase = () => {
               </div>
             </div>
           </div>
-          <ImageGrid />
+          <ImageGrid setSelectedImg={setSelectedImg} />
+          {selectedImg && (
+            <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+          )}
         </div>
       </div>
     </div>
