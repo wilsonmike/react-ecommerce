@@ -3,6 +3,7 @@ import Ashley from "../../assets/ashleychase.PNG";
 import blueashley from "../../assets/blue-ashley.png";
 import pinkashley from "../../assets/pink-ashley.png";
 import UploadForm from "../upload-form/UploadForm";
+import ImageGrid from "../image-grid/ImageGrid";
 
 const AshleyChase = () => {
   return (
@@ -55,6 +56,7 @@ const AshleyChase = () => {
               </div>
             </div>
           </div>
+          <ImageGrid />
         </div>
       </div>
     </div>

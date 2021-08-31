@@ -8,7 +8,9 @@
 .text-raised {
   font-size: 1.3rem;
 }
-
+.container {
+  z-index: 0;
+}
 .ashley {
   max-width: 260px;
   border-radius: 5px;
@@ -40,6 +42,7 @@
   width: 100%;
   height: 100vh;
   z-index: 0;
+  margin-bottom: 20px;
 }
 .tshirt-container {
   display: flex;
