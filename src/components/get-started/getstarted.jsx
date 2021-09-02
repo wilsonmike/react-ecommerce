@@ -29,9 +29,11 @@ const GetStarted = () => {
             </Card.Text>
           </Card.Body>
           <Card.Body>
-            <button className="btn btn-outline-primary btn-md  me-md-2 created">
-              Create Store
-            </button>
+            <Link to="/startform">
+              <button className="btn btn-outline-primary btn-md  me-md-2 created">
+                Create Store
+              </button>
+            </Link>
           </Card.Body>
         </Card>
         <Card className="shadow p-3 mb-5 bg-white rounded">
